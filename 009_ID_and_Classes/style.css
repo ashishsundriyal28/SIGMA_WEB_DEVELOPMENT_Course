@@ -1,0 +1,18 @@
+/* class ko call krte hai dot(.) laga ke */
+.red
+{
+    color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+/* id ko call krte hai hash(#) laga ke */
+#firstdiv
+{
+    background-color: rgb(33, 197, 145);
+}
+#seconddiv
+{
+    background-color: rgb(224, 187, 221);
+}
