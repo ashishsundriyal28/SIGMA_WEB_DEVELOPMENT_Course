@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specifiers continued</title>
+    <style>
+        /* important overwrites the priority of styles */
+        /* Specificity Calculation
+            To calculate specificity, assign a value to each part of the selector:
+
+            Universal Selector: 0
+            Element selectors and pseudo-elements: 1
+            Class selectors, attribute selectors, and pseudo-classes: 10
+            ID selectors: 100
+            Inline styles: 1000
+            Then, add up the values of all the parts in the selector.
+
+            Here is an example  
+        */
+        /* element selector => 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* class selector => 10 */
+        .yellow {
+            color: yellow !important;
+        }
+
+        /* class selector => 10 */
+        .cred {
+            color: red;
+        }
+
+        /* class selector => 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* Attribute selector => 10*/
+        /* data x ke andar agar value a hai to */
+        [data-x=a] {
+            background-color: gray;
+        }
+
+        /* specifity of this selector => 1 + 10 = 11*/
+        h1.yellow {
+            background-color: yellowgreen;
+            color: black;
+        }
+        /* specifity of this selector => 1(for element a) + 10(for class .harryclass) + 10(for class .rohan) + 10(for attribute selector class[href]) + 10 (for pseudo elements) = 1+10+10+10+10 = 41*/
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="yellow cred cpurple" data-x="a">CSS Specifities</h1>
+</body>
+
+</html>
