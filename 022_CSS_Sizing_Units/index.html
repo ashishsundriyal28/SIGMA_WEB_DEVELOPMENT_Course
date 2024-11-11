@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- margin:auto; applies to only block elements -->
+    <!-- % mei height or width, parent ke hisaab se hoti hai -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            /* width: 1532px; */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            height: 10vh;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 1532px; */
+            width: 80vw;
+            font-size: 18px;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        .container p
+        {
+            font-size: 2em;
+        }
+        .mycount{
+            background-color: red;
+            color: yellow;
+            width: 100vmin;
+        }
+        .container > div{
+            font-size: 1.2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+        .container > div > div{
+            font-size: 1em;
+            border: 2px solid black;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eum quam sunt voluptatum laborum reprehenderit eveniet nulla consectetur nemo quae assumenda labore rem, itaque excepturi accusamus, ea quis rerum laboriosam, placeat ducimus repudiandae odit dolores. Culpa temporibus eveniet cupiditate? Neque cumque, est doloribus culpa aspernatur excepturi nisi vero nobis hic eius debitis provident consequatur minima minus mollitia aliquid tempora accusamus veniam eum alias earum, non maxime officia. Deserunt, vel laborum. Nobis doloremque voluptas amet esse accusamus quisquam nesciunt aliquid eveniet at molestiae consequatur unde nihil optio illo odit praesentium deserunt dolorum a, tempore ipsum ipsa natus facilis eaque.
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quos cumque facilis quam ut molestiae iure ab incidunt ipsa, voluptates voluptate laudantium minima? Impedit, architecto!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

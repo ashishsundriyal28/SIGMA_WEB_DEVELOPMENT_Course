@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- margin:auto; applies to only block elements -->
+    <!-- % mei height or width, parent ke hisaab se hoti hai -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 2550px; */
+            /* 100vw => means jitni total width hai utni hi le lega */
+            /* vw means view-width */
+            width: 50vw;
+            /* margin = auto with 50vw makes div in center */
+            /* but this works only in block element and not in inline element */
+            margin: auto;
+            /* vh means view-height */
+            height: 10vh;
+            background-color: aquamarine;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* vw means view-width */
+            width: 50vw;
+            /* top-bottom se 23px, right left se auto */
+            margin: 23px auto;
+            /* height: 80vh; */
+            min-height: 80vh;
+            background-color: aquamarine;
+            font-size: 18px;
+        }
+
+        .container > div {
+            /* means 2*parent-size */
+            /* iska parent container har uska size 18px hai */
+            /* => 2*18=36px */
+            /* agar rem use kiya iska matlab root element*2 */
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        .container > div > div {
+            /* means 2*parent-size */
+            /* iska parent container har uska size 18px hai */
+            /* => 2*18=36px */
+            /* agar rem use kiya iska matlab root element*2 */
+            border: 20px solid blue;
+            /* font-size: 2rem; */
+            width: 50%;
+        }
+
+        .mycont {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            font-size: 22px;
+            width: 100vmin;
+            margin: 23px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eum quam sunt voluptatum laborum
+            reprehenderit eveniet nulla consectetur nemo quae assumenda labore rem, itaque excepturi accusamus, ea
+            quis rerum laboriosam, placeat ducimus repudiandae odit dolores. Culpa temporibus eveniet cupiditate?
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus hic dolorem dolor eius officia
+                adipisci, et architecto aut incidunt necessitatibus iste quos eos doloremque debitis. Perferendis odit
+                explicabo rem qui.
+            </div>
+        </div>
+
+    </div>
+    <div class="mycont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quos cumque facilis quam ut molestiae iure
+        ab incidunt ipsa, voluptates voluptate laudantium minima? Impedit, architecto!
+    </div>
+</body>
+
+</html>
