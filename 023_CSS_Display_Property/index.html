@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            /* to make a block element to inline */
+            /* display: inline; */
+            display: inline-block;
+            /* inline element doesn't take padding and margin for above */
+            /* the both works in inline-block property */
+            padding : 10px;
+            margin: 34px;
+        }
+        .box1 {
+            /* display : none */
+            /* display: none; */
+            /* this property removes the spaces also of the div */
+            /* visibility : hidden ; */
+            /* visibility: hidden; */
+            /* this property only hides the box but its space is still there */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        I am also a nice box
+    </div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>
