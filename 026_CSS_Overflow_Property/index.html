@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* 1 way : overflow :scroll; */
+            /* overflow :scroll; */
+            /* agar overflow kare tbhi scroll dikhana */
+            /* 
+            aur horizontally sari space le aur vertically text na wrap ho to fir ek property *white-space:nowrap;* bhi use kr lo auto ke saath
+            */
+            overflow :auto;
+            /*
+            white-space: nowrap;
+            /*this is text overflow /
+            text-overflow: ellipsis; /* shows like dots in long text .. */
+            /* overflow : first-x second-y ; */
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a good boy and I love Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero minus eaque nesciunt sunt nihil temporibus nisi dolores, beatae rem voluptates repellat quod? Quod magnam accusantium, laudantium, laboriosam aperiam tempora alias temporibus non, pariatur unde necessitatibus minima voluptatibus corporis mollitia. Rem architecto quaerat incidunt velit nisi!
+    </div>
+</body>
+</html>
